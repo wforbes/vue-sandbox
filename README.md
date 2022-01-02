@@ -1,5 +1,11 @@
 # vue-sandbox
 
+## Build dev docker image
+`docker build -f ./dev.dockerfile -t vue-sandbox-image .`
+
+## Run docker image
+`docker run -v ${pwd}\src:/src -p 8080:8080 -d --name vue-sandbox vue-sandbox-image`
+
 ## Project setup
 ```
 npm install
